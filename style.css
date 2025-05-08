@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+
+:root {
+  --blck: #000000;
+  --yell: #f1b51c;
+  --font-serif: "Merriweather", serif;
+  --font-mono: "Consolas", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-serif);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  min-height: 800vh;
+}
+
+.slide {
+  position: sticky;
+  top: 0;
+}
+
+section {
+  margin: 0;
+  padding: 50px 0;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: var(--font-mono);
+  font-size: 2.5rem;
+  margin: 30px 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+
+p {
+  font-family: var(--font-mono);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.date {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+li {
+  font-size: 1.2rem;
+  padding: 3px;
+  letter-spacing: 1px;
+  margin: 8px 0;
+}
+
+/* L A N D I N G   P A G E */
+
+.land_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yell);
+  padding: 0;
+}
+
+#final_coutach {
+  width: 50%;
+}
+
+/* A B O U T  M E */
+
+.about_me {
+  display: flex;
+  background-color: var(--blck);
+  color: var(--yell);
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+#czesc {
+  width: 200px;
+}
+
+.desc {
+  max-width: 70%;
+  margin-bottom: 100px;
+}
+
+/* E D U C A T I O N  &  J O B S */
+
+.edu_jobs {
+  background-color: var(--yell);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.edu_jobs_container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.education {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: space-between;*/
+  max-width: 50%;
+  margin: 20px 40px 20px 0;
+}
+
+.school {
+  padding-bottom: 30px;
+}
+
+.chevy_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20% 0;
+}
+
+#chevy {
+  max-width: 90%;
+  padding: 0;
+}
+
+#chevy_subt {
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.jobs {
+  max-width: 50%;
+  margin: 20px 0 20px 40px;
+}
+
+.job {
+  padding-bottom: 30px;
+}
+
+/* S K I L L S */
+
+.skills {
+  position: relative;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blck);
+  color: var(--yell);
+  justify-content: start;
+  align-items: center;
+}
+
+.skills h1 {
+  margin: 20px 0;
+}
+
+.grid_div {
+  margin: 30px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.grid_item {
+  text-align: center;
+}
+
+.grid_item img {
+  width: 80px;
+}
+
+.grid_item h4 {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.grid_item p {
+  font-family: var(--font-serif);
+  font-weight: 900;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.projects {
+  background-color: var(--yell);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.projects h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.projects_container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 90%;
+  margin: 40px 0;
+}
+
+.project_div {
+  background-color: var(--blck);
+  color: var(--yell);
+  width: 60%;
+  margin: 0 20px;
+}
+
+.projects_container img {
+  height: auto;
+  width: 100%;
+}
+
+.project_text {
+  margin: 0;
+  padding: 30px;
+}
+
+.project_div p {
+  font-size: 1rem;
+}
+
+.project_div a {
+  text-decoration: none;
+  color: var(--yell);
+}
+
+.active {
+  transition: box-shadow 0.3s ease, transform 0.2s ease-in;
+}
+
+.active:hover {
+  box-shadow: 10px 10px 24px -14px rgba(0, 0, 0, 1);
+  transform: translateY(-7px);
+}
+
+.curt_container {
+  position: relative;
+  height: 100%;
+}
+
+.curtain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(87, 65, 10, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.curt_container:hover .curtain {
+  bottom: 0;
+  height: 100%;
+}
+
+.curt_text {
+  font-weight: 900;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blck);
+  color: var(--yell);
+  height: 100vh;
+}
+
+.foot_container {
+  max-width: 70%;
+}
+
+.foot_container h1 {
+  text-align: center;
+}
+
+#name {
+  margin: 21px 0 15px 0;
+}
+
+.foot_container a {
+  color: var(--yell);
+}
+
+.info_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer_first {
+  text-align: right;
+  padding: 0 30px;
+  width: 250px;
+}
+
+.footer_second {
+  text-align: left;
+  padding: 0 30px;
+  width: 250px;
+}
+
+.icons_container {
+  display: flex;
+  justify-content: center;
+}
+
+.icons_container img {
+  margin: 20px 15px;
+}
+
+#RODO {
+  justify-self: center;
+  width: 50%;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin: 20px 0;
+}
+
+#rights {
+  font-size: 1rem;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.7rem;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    justify-self: center;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
+  li {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  /*landing page*/
+
+  #final_coutach {
+    width: 70%;
+  }
+
+  /*about me*/
+
+  .about_me {
+    padding: 0;
+  }
+
+  .desc {
+    text-align: justify;
+    margin-bottom: 0;
+  }
+
+  #czesc {
+    width: 100px;
+  }
+
+  /*edu jobs*/
+
+  .edu_jobs {
+    flex-direction: row;
+  }
+
+  .chevy_container {
+    display: none;
+  }
+
+  .edu_jobs_container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .education {
+    margin: 0;
+    padding-left: 15%;
+  }
+
+  .jobs {
+    margin: 0;
+    padding-left: 15%;
+  }
+
+  /*skills*/
+
+  .skills {
+    position: relative;
+    height: auto;
+  }
+
+  .grid_div {
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .grid_item img {
+    width: 40px;
+  }
+
+  .grid_item h4 {
+    font-size: 0.8rem;
+    margin: 10px 0;
+  }
+
+  .grid_item p {
+    font-size: 0.8rem;
+    margin: 10px 0;
+  }
+
+  /*projekty*/
+
+  .projects {
+    position: relative;
+    height: auto;
+  }
+
+  .projects_container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    height: auto;
+  }
+
+  .project_div {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .project_text {
+    padding: 20px;
+  }
+
+  .project_text p {
+    font-size: 0.8rem;
+  }
+
+  /*footer*/
+
+  #name {
+    margin: 0;
+  }
+
+  .info_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_first,
+  .footer_second {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #RODO {
+    width: 80%;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  #rights {
+    font-size: 0.6rem;
+    margin-top: 50px;
+  }
+}
