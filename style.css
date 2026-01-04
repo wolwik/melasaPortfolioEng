@@ -99,7 +99,7 @@ li {
   color: var(--yell);
   justify-content: center;
   align-items: center;
-  text-align: start;
+  text-align: justify;
 }
 
 #czesc {
@@ -173,7 +173,6 @@ li {
 /* S K I L L S */
 
 .skills {
-  position: relative;
   width: auto;
   display: flex;
   flex-direction: column;
